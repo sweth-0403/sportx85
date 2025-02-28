@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Feed Container */
+.feed-container {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+}
+
+/* Post Card */
+.post-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Post Header */
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.post-header h4 {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.post-header h4:hover {
+  color: #0073b1;
+}
+
+.post-header p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+/* Post Content */
+.post-content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+/* Post Image */
+.post-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Post Actions */
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-top: 1px solid #ddd;
+  margin-top: 12px;
+}
+
+.action-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: #666;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.action-btn:hover {
+  background-color: rgba(0, 115, 177, 0.1);
+  color: #0073b1;
+  transform: scale(1.05);
+}
+
+/* Like Button Animation */
+.like-btn {
+  color: #333;
+  transition: color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.like-btn.liked {
+  color: #0073b1;
+  transform: scale(1.2);
+}
+
+/* Comment Box */
+.comment-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.comment-box h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.comments-list {
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.comment-item {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.comment-item strong {
+  color: #0073b1;
+  font-size: 0.95rem;
+}
+
+.comment-item p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.comment-item small {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+/* Comment Input */
+.comment-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-top: 10px;
+  outline: none;
+  font-size: 0.9rem;
+  transition: border 0.3s ease;
+}
+
+.comment-box input:focus {
+  border-color: #0073b1;
+  box-shadow: 0 0 5px rgba(0, 115, 177, 0.3);
+}
+
+/* Comment Button */
+.comment-box button {
+  margin-top: 12px;
+  padding: 10px 15px;
+  border: none;
+  background: #0073b1;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.comment-box button:hover {
+  background: #005a8c;
+}
+
+/* Share Box */
+.share-box {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.share-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.share-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Social Media Colors */
+.facebook {
+  color: #1877f2;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.linkedin {
+  color: #0073b1;
+}
+
+.copy-link {
+  color: #555;
+}
+
+/* Account Name */
+.clickable-name {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.clickable-name:hover {
+  color: #0073b1;
+}

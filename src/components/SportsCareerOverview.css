@@ -1,0 +1,137 @@
+.sports-career-overview {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.sports-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.sports-header h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.add-sports-btn,
+.edit-sports-btn {
+  background: #0073b1;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  max-width: 400px;
+}
+
+.add-sports-btn:hover,
+.edit-sports-btn:hover {
+  background: #005582;
+}
+
+/* Sports Display */
+.sports-display {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+  border-left: 4px solid #0073b1;
+}
+
+.sports-display h3 {
+  margin: 5px 0;
+  color: #0073b1;
+}
+
+.sports-display p {
+  color: #555;
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.submit-btn {
+  background: #0073b1;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #ccc;
+  color: #333;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #005582;
+}
+
+.cancel-btn:hover {
+  background: #bbb;
+}
